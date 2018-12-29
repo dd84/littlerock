@@ -30,3 +30,13 @@
     transform: rotate(360deg);
   }
 }
+
+
+.Header_logo {
+  font-family: 'Indie Flower', cursive;
+font-family: 'Major Mono Display', monospace;
+}
+.container__logo{
+  display: flex;
+  flex-grow: 1;
+}
