@@ -1,11 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
 
 .App-header {
   background-color: #282c34;
@@ -30,7 +22,10 @@
     transform: rotate(360deg);
   }
 }
-
+header {
+  padding:10px 0px;
+  transition: all 300ms ease-in;
+}
 
 .Header_logo {
   font-family: 'Indie Flower', cursive;
@@ -39,4 +34,189 @@ font-family: 'Major Mono Display', monospace;
 .container__logo{
   display: flex;
   flex-grow: 1;
+}
+
+/* carousell  */
+
+.carousel__container {
+  height:700px;
+  overflow: hidden;
+}
+
+.slider_image{
+    
+  background-size: cover !important;
+}
+
+
+
+.course_Wrapper {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+ display: flex;
+
+ 
+ justify-content: center;
+ align-items: center;
+  
+}
+
+.course__details{
+  width: 60%;
+ color: white;
+ text-align: center;
+
+ 
+}
+
+.rocket_logo{
+  background-image: url("./logo.svg");
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ align-items: center;
+  
+}
+
+
+  .btn_enrol{
+   
+    padding: 15px 40px;
+    margin: 10px;
+    font-family: 'Indie Flower', cursive;
+
+    color: white;
+    background-color: rgb(189, 0, 0);
+    display: inline-block;
+    border-radius: 100px; 
+    text-transform: uppercase;
+   
+   
+    
+
+}
+.btn_enrol:hover {
+  transform: translateY(-3px)
+}
+.btn_enrol:active{
+  transform: translateY(-1px)
+}
+.percentage_countdown{
+  font-size: 200px;
+  color:  #F44336;
+  padding-right: 49px;
+  margin-left: 50px;
+}
+.discount_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.off {
+  color: #F44336;
+  font-size: 30px;
+}
+
+.txt__discount{
+  text-align: start;
+  padding: 30px;
+}
+
+.discount_description{
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 300;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 30px 0px;
+  margin: 30px;
+}
+.discount_description--title{
+ text-align: center;
+ font-size: 50px;
+}
+.iconImage {
+  width: 20px;
+  margin-right: 10px;
+}
+.pricing_section {
+  padding: 70px 0px;
+}
+
+
+.pricing_section h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+}
+
+.pricing_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pricing_wrapper .pricing_item{
+  flex-grow: 1;
+  width: 33%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.pricing_wrapper .pricing_inner_wrapper {
+  border:2px solid #ffa800;
+  border-radius: 5px;
+  padding: 50px 20px;
+}
+
+.pricing_inner_wrapper .pricing_title {
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 1px solid #ffa800;
+  padding-bottom: 20px;
+}
+.pricing_inner_wrapper .pricing_title span:nth-child(1) {
+  font-size: 50px;
+  display: block;
+}
+.pricing_inner_wrapper .pricing_title span:nth-child(2) {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 300;
+}
+.pricing_inner_wrapper .pricing_description {
+  color: #b8b8b8;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0px;
+  min-height: 70px;
+}
+
+.pricing_inner_wrapper .pricing_buttons {
+   text-align: center;
+}
+
+.bck_black {
+  background: #3c3c3c;
+}
+
+footer {
+  padding:50px 0px;
+  text-align: center;
+  font-size: 60px;
+  color:#ffffff;
+  background: red;
+}
+
+footer .footer_copyright {
+  font-size: 18px;
 }

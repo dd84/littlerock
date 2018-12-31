@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
+
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import SideDrawer from "./sideDrawer"
@@ -12,14 +10,31 @@ import SideDrawer from "./sideDrawer"
 class Header  extends Component {
 
     state={
-        drawOpen: false
+        drawOpen: false,
+        headerShow: false
     }
 
+    componentDidMount(){
+        window.addEventListener("scroll",this.handleScroll)
+    }
+handleScroll = () => {
+    if(window.scrollY > 0){
+        this.setState({
+            headerShow: true
+        })
+    }else{
+        this.setState({
+            headerShow: false
+    })
+}
+    
+}
     toggleDrawer = (value) => {
         this.setState({
             drawOpen: value
         })
     }
+
  render(){
   return (
     <div >
@@ -27,7 +42,7 @@ class Header  extends Component {
       
       position="fixed"
       style={{
-          backgroundColor: "black",
+          backgroundColor: this.state.headerShow ? "black" : "transparent",
           boxShadow: "none",
           padding: "10px 0px"
       }}
